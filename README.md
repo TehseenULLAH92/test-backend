@@ -1,3 +1,23 @@
+# setup instructions
+* clone repo 
+* run `npm install`
+* create .env file and paste the follwing in it.
+`MONGODB_URI=mongodb://localhost:27017/restdb
+GOOGLE_CLIENT_ID=
+GOOGLE_CLIENT_SECRET=
+PORT=3000`
+* start the dev server `nodemon index`
+* run test `npm test`
+
+# how to use the api docs
+* download postman collection from postman
+https://documenter.getpostman.com/view/2616661/SW7dXSUd?version=latest
+or
+https://documenter.getpostman.com/view/2616661/SW7dXSUd
+
+Thanks
+
+
 # Wiredcraft Back-end Developer Test
 
 Make sure you read the whole document carefully and follow the guidelines in it.

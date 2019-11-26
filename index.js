@@ -3,6 +3,7 @@ require('dotenv').config()
 const express = require('express') // Import express
 const bodyParser = require('body-parser'); // Import Body parser
 const mongoose = require('mongoose'); // Import Mongoose
+const methodOverride = require('method-override');
 const user = require("./routes/user") // Import user route
 const app = express(); // Initialize the app
 
@@ -17,7 +18,7 @@ db.once('open', function(){
   })
 
 app.use(bodyParser.json())
-
+app.use(methodOverride());
 app.get('/', (req, res) => res.send('Hello World with Express')); // Send message for default URL
 app.use('/api', user) // Use Api routes in the App
 

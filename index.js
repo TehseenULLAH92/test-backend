@@ -22,7 +22,7 @@ app.use(methodOverride());
 app.get('/', (req, res) => res.send('Hello World with Express')); // Send message for default URL
 app.use('/api', user) // Use Api routes in the App
 
-var port = process.env.PORT || 3000; // Setup server port
+var port = process.env.PORT || 4000; // Setup server port
 // Launch app to listen to specified port
 app.listen(port, function () {
      console.log("Running RestAPI on port " + port);
